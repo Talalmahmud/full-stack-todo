@@ -1,10 +1,10 @@
 "use server";
-import { PrismaClient } from "@prisma/client";
 
-const prisma = new PrismaClient();
+import { PrismaClient } from "@prisma/client";
 
 export const addTodo = async () => {
   try {
+    const prisma = new PrismaClient();
     const createTodo = {
       title: "test-2",
     };
@@ -18,6 +18,7 @@ export const addTodo = async () => {
 
 export const getTodos = async () => {
   try {
+    const prisma = new PrismaClient();
     const res = await prisma.todo.findMany();
   } catch (error) {
     console.log(error);
@@ -26,6 +27,7 @@ export const getTodos = async () => {
 
 export const updateTodo = async () => {
   try {
+    const prisma = new PrismaClient();
     const createTodo = "try";
 
     const res = await prisma.todo.updateMany({
@@ -43,6 +45,7 @@ export const updateTodo = async () => {
 
 export const deleteTodo = async () => {
   try {
+    const prisma = new PrismaClient();
     const createTodo = "try";
 
     const res = await prisma.todo.deleteMany({

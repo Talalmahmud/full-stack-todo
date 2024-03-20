@@ -1,5 +1,5 @@
 "use client";
-import { addTodo, deleteTodo, getTodos, updateTodo } from "@/app/libs/crud";
+import { addTodo, deleteTodo, getTodos, updateTodo } from "../app/libs/crud";
 import React, { useEffect } from "react";
 
 type Props = {};
