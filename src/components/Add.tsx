@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
-import { getTodos } from "../app/libs/crud";
+import { getTodos } from "../libs/crud";
 
 type Props = {};
 
