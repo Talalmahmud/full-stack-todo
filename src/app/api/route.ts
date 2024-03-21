@@ -1,5 +1,5 @@
 import { PrismaClient } from "@prisma/client";
-const prisma = new PrismaClient();
+import prisma from "../libs/prisma";
 
 export async function GET() {
   const data = await prisma.todo.findMany();
