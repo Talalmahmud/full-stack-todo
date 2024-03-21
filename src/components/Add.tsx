@@ -11,7 +11,6 @@ const Add = (props: Props) => {
     console.log(result);
   };
 
-  
   useEffect(() => {
     getTodos();
   }, []);
