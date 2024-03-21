@@ -10,6 +10,8 @@ const Add = (props: Props) => {
     const result = await res.json();
     console.log(result);
   };
+
+  
   useEffect(() => {
     getTodos();
   }, []);
