@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect } from "react";
-import { getTodos } from "../libs/crud";
 
 type Props = {};
 
@@ -11,9 +10,6 @@ const Add = (props: Props) => {
     console.log(result);
   };
 
-  useEffect(() => {
-    getTodos();
-  }, []);
   return (
     <div>
       <button
