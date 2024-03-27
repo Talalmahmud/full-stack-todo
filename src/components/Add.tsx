@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { memo, useCallback, useEffect, useMemo } from "react";
 
 type Props = {};
 
@@ -9,6 +9,9 @@ const Add = (props: Props) => {
     const result = await res.json();
     console.log(result);
   };
+  useEffect(() => {
+    getTodos();
+  }, []);
 
   return (
     <div>
@@ -34,4 +37,4 @@ const Add = (props: Props) => {
   );
 };
 
-export default Add;
+export default memo(Add);
