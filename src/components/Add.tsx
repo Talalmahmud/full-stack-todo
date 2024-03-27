@@ -4,14 +4,14 @@ import React, { memo, useCallback, useEffect, useMemo } from "react";
 type Props = {};
 
 const Add = (props: Props) => {
-  const getTodos = async () => {
-    const res = await fetch("/api/todo");
-    const result = await res.json();
-    console.log(result);
-  };
-  useEffect(() => {
-    getTodos();
-  }, []);
+  // const getTodos = async () => {
+  //   const res = await fetch("/api/todo");
+  //   const result = await res.json();
+  //   console.log(result);
+  // };
+  // useEffect(() => {
+  //   getTodos();
+  // }, []);
 
   return (
     <div>
